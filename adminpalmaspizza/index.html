@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="icon" type="image/x-icon" href="./css/palmaspizza.png">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Palmas Pizza</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body style="height: 100%; width: auto;">
+    <form style="margin-top: 0%; width: 1590px;" action="" class="formulario">
+      <button type="submit" disabled hidden></button>
+<div>      
+         <div style="border-radius: 10px; background-color: rgb(255, 255, 255); width: 2050px; margin-top: 0px; margin-left: 0px; height: 90px; position: fixed; float: left; z-index: 3;"  >     
+
+          <input type="button" name="" id="button-finalizarpedido"
+          style="
+            background-color: #ff8900;
+  position: fixed;
+  z-index: 7;
+  color: #ffffff; font-size: 40px;
+  border: solid #ff9900 1px; border-radius: 5px; padding: 10px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; position: fixed; margin-left: 1720px; margin-top: 25px;"
+          value="Finalizar Pedido" data-open="modal4">
+       
+<div style=" border-left: #ffffff 70px 60px 60px 60px; box-shadow: #000000 1px 19px 10px 0px; border-radius: 10px; ">
+          <a href="" disabled> <img style="width: 110px; height: 110px; box-shadow: #ffffff 10px 0px 40px 29px; border-left: #ffffff px; box-shadow: #ffffff 90px 60px 60px 60px 60px; background-color: #ffffff; border-bottom: #000000 40px;" src="./css/palmaspizza.png" alt=""></a>
+        </div>
+          </div>
+      </div>
+
+      <div>
+        
+      </div>
+</div>
+
+
+
+
+
+
+
+<label for=""></label>
+                    <input id="" type="text" style="margin-top: 100px; font-size: 40px; border: white;" readonly onmousedown="return" >
+<!--------------------------------------------------Pizzas------------------------------------->
+
+<div style="margin-left:446px;box-shadow: #000000 1px 12px 20px 4px; width: 1590px;" >
+
+<div id="content-superbeef">
+          <label for="Rsuperbeef"></label>
+           <input id="Rsuperbeef" type="text" hidden>
+        <button  style="
+        z-index: 1;
+        display: block;
+        font-size: 1, 3em;
+        padding: auto;
+        background: #0000000e;
+        /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+        border: 8px solid rgb(255, 132, 0);
+        margin-bottom: 15px;
+        border-radius: 10px;" id="superbeef" type="button" value="Super Beef" class="open-modal" data-open="modalsuperbeef">
+          <H1 style="color: black;">Super Beef</H1><img src="./pizzas/superbeef.png" height ="200" width="200" /></button>
+          <div class="btn-group">
+            <div class="modal" id="modalsuperbeef" data-animation="slideInOutLeft">
+              <div class="modal-dialog">
+                <header class="modal-header">
+                  <h2>Super Beef</h2>
+                </header>
+                <section class="modal-content">
+                  <label for="cantidadsuperbeef" class="formulario__label labelauto"
+                  >Cantidad</label
+                >
+                <input id="cantidadsuperbeef" type="number" class="formulario__input" />
+        
+        
+                <label for="tamañosuperbeef">
+                  Tamaño
+                </label>
+                <select class="formulario__input" name="tamaño" id="tamañosuperbeef">
+                  <option value="">▼ Tamaño ▼</option>
+                  <option value="Familiar">Familiar</option>
+                  <option value="Mediana">Mediana</option>
+        
+                </select>
+                <button type="button" class="cancelarr" onclick="limpiarsuperbeef();Lcantidadsuperbeef();Ltamañosuperbeef()" data-close="">Cancelar</button>
+                <input type="button" value="Agregar" class="agregar" data-close="">
+                
+                    
+              </div>
+            </div>
+            </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+<!--PIZZANAPOLITANA-->
+
+
+<div id="content-napolitana">
+
+        <button style="
+        z-index: 1;
+     display: block;
+     font-size: 1, 3em;
+     padding: auto;
+     background: transparent;
+     /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+     border: 8px solid rgb(255, 132, 0);
+     margin-bottom: 15px;
+     border-radius: 10px;" id="napolitana" type="button" value="Napolitana" class="open-modal" data-open="modalnapolitana">
+       <H1 style="color: black;">Napolitana</H1><img src="./pizzas/napolitana.png" height ="203" width="200" /></button>
+     <div class="btn-group">
+     <div class="modal" id="modalnapolitana" data-animation="slideInOutLeft">
+       <div class="modal-dialog">
+         <header class="modal-header">
+          <label for="Rnapolitana"></label>
+           <input id="Rnapolitana" type="text" hidden>
+           <h2>Napolitana</h2>
+         </header>
+         <section class="modal-content">
+           <label for="cantidadnapolitana" class="formulario__label"
+           >Cantidad</label
+         >
+         <input id="cantidadnapolitana" type="number" class="formulario__input" />
+ 
+ 
+         <label for="tamañonapolitana">
+           Tamaño
+         </label>
+         <select class="formulario__input" name="tamaño" id="tamañonapolitana">
+           <option value="">▼ Tamaño ▼</option>
+           <option value="Familiar">Familiar</option>
+           <option value="Mediana">Mediana</option>
+ 
+         </select>
+         <button type="button" class="cancelarr" onclick="limpiarnapolitana();Lnapolitana();Ltamañonapolitana()" data-close="">Cancelar</button>
+         <input type="button" data-close="" value="Agregar" class="agregar">
+         
+       </div>
+     </div>
+     </div>
+
+
+    </div>
+
+<!------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--PIZZAITALIANA-->
+
+
+<div id="content-italiana">
+
+      
+      
+     <button style="
+     display: block;
+     font-size: 1, 3em;
+     padding: auto;
+     background: transparent;
+     /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+     border: 8px solid rgb(255, 132, 0);
+     margin-bottom: 15px;
+     border-radius: 10px" id="italiana" type="button" value="Italiana" class="open-modal" data-open="modalitaliana">
+      <H1 style="color: black;">Italiana</H1> <img src="./pizzas/italiana.png" height ="200" width="200" /></button>
+     <div class="btn-group">
+     <div class="modal" id="modalitaliana" data-animation="slideInOutLeft">
+       <div class="modal-dialog">
+         <header class="modal-header">
+           <input id="Ritaliana" type="text" hidden>
+           <h2>Italiana</h2>
+           <label for="Ritaliana"></label>
+         </header>
+         <section class="modal-content">
+           <label for="cantidaditaliana" class="formulario__label"
+           >Cantidad</label
+         >
+         <input id="cantidaditaliana" type="number" class="formulario__input" />
+ 
+ 
+         <label for="tamañoitaliana">
+           Tamaño
+         </label>
+         <select class="formulario__input" name="tamaño" id="tamañoitaliana">
+           <option value="">▼ Tamaño ▼</option>
+           <option value="Familiar">Familiar</option>
+           <option value="Mediana">Mediana</option>
+ 
+         </select>
+         <button type="button" class="cancelarr" onclick="limpiaritaliana();Litaliana();Ltamañoitaliana()" data-close="">Cancelar</button>
+         <input type="button" data-close="" value="Agregar" class="agregar">
+         
+       </div>
+     </div>
+     </div>
+
+
+
+
+
+    </div>
+<!------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------------PIZZASUPERPEPPERONI----------------------------------------------------------------->
+
+
+    <div id="content-superpepperoni">
+
+      <button style="
+      display: block;
+      font-size: 1, 3em;
+      padding: auto;
+      background: transparent;
+      /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+      border: 8px solid rgb(255, 132, 0);
+      margin-bottom: 15px;
+      border-radius: 10px;" id="superpepperoni" type="button" value="Super Pepperoni" class="open-modal" data-open="modalsuperpepperoni">
+       <H1 style="color: black;">Super Pepperoni</H1> <img src="./pizzas/superpepperoni.png" height ="200" width="200" /></button>
+      <div class="btn-group">
+      <div class="modal" id="modalsuperpepperoni" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <label for="Rsuperpepperoni"></label>
+            <input id="Rsuperpepperoni" type="text" hidden>
+            <h2>Super Pepperoni</h2>
+          </header>
+          <section class="modal-content">
+            <label for="cantidadsuperpepperoni" class="formulario__label"
+            >Cantidad</label
+          >
+          <input id="cantidadsuperpepperoni" type="number" class="formulario__input" />
+  
+  
+          <label for="tamañosuperpepperoni">
+            Tamaño
+          </label>
+          <select class="formulario__input" name="tamaño" id="tamañosuperpepperoni">
+            <option value="">▼ Tamaño ▼</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Mediana">Mediana</option>
+  
+          </select>
+          <button type="button" class="cancelarr" onclick="limpiarsuperpepperoni();Lsuperpepperoni();Ltamañosuperpepperoni()" data-close="">Cancelar</button>
+          <input type="button" data-close="" value="Agregar" class="agregar">
+          
+        </div>
+      </div>
+      </div>
+      
+    </div>
+<!------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+<!-------------------------PIZZAVEGETARIANA----------------------------------------------------------------------->
+
+<div id="content-vegetariana">
+      <button style="
+      display: block;
+      font-size: 1, 3em;
+      padding: auto;
+      background: transparent;
+      /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+      border: 8px solid rgb(255, 132, 0);
+      margin-bottom: 15px;
+      border-radius: 10px;" id="vegetariana" type="button" value="Vegetariana" class="open-modal" data-open="modalvegetariana">
+      <H1 style="color: black;">Vegetariana</H1>  <img src="./pizzas/vegetariana.png" height ="200" width="200" /></button>
+      <div class="btn-group">
+      <div class="modal" id="modalvegetariana" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <input id="Rvegetariana" type="text" hidden>
+            <h2>Vegetariana</h2>
+            <label for="Rvegetariana"></label>
+          </header>
+          <section class="modal-content">
+            <label for="cantidadvegetariana" class="formulario__label"
+            >Cantidad</label
+          >
+          <input id="cantidadvegetariana" type="number" class="formulario__input" />
+  
+  
+          <label for="tamañovegetariana">
+            Tamaño
+          </label>
+          <select class="formulario__input" name="tamaño" id="tamañovegetariana">
+            <option value="">▼ Tamaño ▼</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Mediana">Mediana</option>
+  
+          </select>
+          <button type="button" class="cancelarr" onclick="limpiarvegetariana();Lvegetariana();Ltamañovegetariana()" data-close="">Cancelar</button>
+          <input type="button" data-close="" value="Agregar" class="agregar">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+<!------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------PIZZAHAWAIANA------------------------------------------------------------>
+
+<div id="content-hawaiana">
+      <button style="
+      display: block;
+      font-size: 1, 3em;
+      padding: auto;
+      background: transparent;
+      /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+      border: 8px solid rgb(255, 132, 0);
+      margin-bottom: 15px;
+      border-radius: 10px;" id="hawaiana" type="button" value="Hawaiana" class="open-modal" data-open="modalhawaiana">
+      <H1 style="color: black;">Hawaiana</H1>  <img src="./pizzas/hawaiana.png" height ="200" width="200" /></button>
+      <div class="btn-group">
+      <div class="modal" id="modalhawaiana" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <label for="Rhawaiana"></label>
+            <input id="Rhawaiana" type="text" hidden>
+            <h2>Hawaiana</h2>
+          </header>
+          <section class="modal-content">
+            <label for="cantidadhawaiana" class="formulario__label"
+            >Cantidad</label
+          >
+          <input id="cantidadhawaiana" type="number" class="formulario__input" />
+  
+  
+          <label for="tamañohawaiana">
+            Tamaño
+          </label>
+          <select class="formulario__input" name="tamaño" id="tamañohawaiana">
+            <option value="">▼ Tamaño ▼</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Mediana">Mediana</option>
+  
+          </select>
+          <button type="button" class="cancelarr" onclick="limpiarhawaiana();Lhawaiana();Ltamañohawaiana()" data-close="">Cancelar</button>
+          <input type="button" data-close="" value="Agregar" class="agregar">
+        </div>
+      </div>
+      </div>
+    </div>
+            <!------------------------------------------------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------PIZZACHEESEBURGER--------------------------------------------------------------------------------->
+        
+<div id="content-cheeseburger">
+      <button style="
+      display: block;
+      font-size: 1, 3em;
+      padding: auto;
+      background: transparent;
+      /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+      border: 8px solid rgb(255, 132, 0);
+      margin-bottom: 15px;
+      border-radius: 10px;" id="cheeseburger" type="button" value="Cheeseburger" class="open-modal" data-open="modalcheeseburger">
+       <H1 style="color: black;">Cheeseburger</H1> <img src="./pizzas/cheeseburger.png" height ="200" width="200" /></button>
+      <div class="btn-group">
+      <div class="modal" id="modalcheeseburger" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <label for="Rcheeseburger"></label>
+            <input id="Rcheeseburger" type="text" hidden>
+            <h2>Cheeseburger</h2>
+          </header>
+          <section class="modal-content">
+            <label for="cantidadcheeseburger" class="formulario__label"
+            >Cantidad</label
+          >
+          <input id="cantidadcheeseburger" type="number" class="formulario__input" />
+  
+  
+          <label for="tamañocheeseburger">
+            Tamaño
+          </label>
+          <select class="formulario__input" name="tamaño" id="tamañocheeseburger">
+            <option value="">▼ Tamaño ▼</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Mediana">Mediana</option>
+  
+          </select>
+          <button type="button" class="cancelarr" onclick="limpiarcheeseburger();Lcheeseburger();Ltamañocheeseurger()" data-close="">Cancelar</button>
+          <input type="button" data-close="" value="Agregar" class="agregar">
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!---------------PIZZACHILLIAN--------------------------------------------------------------------------------->
+        <div id="content-chillian">
+      <button style="
+      display: block;
+      font-size: 1, 3em;
+      padding: auto;
+      background: transparent;
+      /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+      border: 8px solid rgb(255, 132, 0);
+      margin-bottom: 15px;
+      border-radius: 10px;" id="chillian" type="button" value="Chillian" class="open-modal" data-open="modalchillian">
+       <H1 style="color: black;">Chillian</H1> <img src="./pizzas/chillian.png" height ="200" width="200" /></button>
+      <div class="btn-group">
+      <div class="modal" id="modalchillian" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <label for="Rchillian"></label>
+            <input id="Rchillian" type="text" hidden>
+            <h2>Chillian</h2>
+          </header>
+          <section class="modal-content">
+            <label for="cantidadchillian" class="formulario__label"
+            >Cantidad</label
+          >
+          <input id="cantidadchillian" type="number" class="formulario__input" />
+  
+  
+          <label for="tamañochillian">
+            Tamaño
+          </label>
+          <select class="formulario__input" name="tamaño" id="tamañochillian">
+            <option value="">▼ Tamaño ▼</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Mediana">Mediana</option>
+          </select>
+          <button type="button" class="cancelarr" onclick="limpiarchillian();Lchillian();Ltamañochillian()" data-close="">Cancelar</button>
+          <input type="button" value="Agregar" data-close="" class="agregar">
+        </div>
+      </div>
+      </div>
+            
+    </div>
+
+
+
+
+
+
+
+            
+
+
+
+
+
+<!---------------------PIZZAPOLLOBBQ--------------------------------------------------------------------------->
+
+
+<div id="content-pollobbq">
+      <button style="
+      display: block;
+      font-size: 1, 3em;
+      padding: auto;
+      background: transparent;
+      /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+      border: 8px solid rgb(255, 132, 0);
+      margin-bottom: 15px;
+      border-radius: 10px;" id="pollobbq" type="button" value="Pollo BBQ" class="open-modal" data-open="modalpollobbq"><H1 style="color: black;">Pollo BBQ</H1>
+        <img src="./pizzas/pollobbq.png" height ="200" width="200" /></button>
+      <div class="btn-group">
+      <div class="modal" id="modalpollobbq" data-animation="slideInOutLeft">
+        <div class="modal-dialog">
+          <header class="modal-header">
+            <label for="Rpollobbq"></label>
+            <input id="Rpollobbq" type="text" hidden>
+            <h2>Pollo BBQ</h2>
+          </header>
+          <section class="modal-content">
+            <label for="cantidadpollobbq" class="formulario__label"
+            >Cantidad</label
+          >
+          <input id="cantidadpollobbq" type="number" class="formulario__input" />
+  
+  
+          <label for="tamañopollobbq">
+            Tamaño
+          </label>
+          <select class="formulario__input" name="tamaño" id="tamañopollobbq">
+            <option value="">▼ Tamaño ▼</option>
+            <option value="Familiar">Familiar</option>
+            <option value="Mediana">Mediana</option>
+  
+          </select>
+          <button type="button" class="cancelarr" onclick="limpiarpollobbq();Lpollobbq();Ltamañopollobbq()" data-close="">Cancelar</button>
+          <input type="button" data-close="" class="agregar" value="Agregar">
+          
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+
+</div>
+<!------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------>
+
+<!------------------------------------------------------------------------------------------------>    
+
+<!--------------------------------------------------Fin-Pizzas------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    </div>
+      <div style="z-index: 15;" class="modal" id="modal4" >
+        <div class="modal-dialog">
+          <header  style="padding-bottom: 1%; font-size: 30px; font-family: impact;" class="modal-header">
+            DATOS
+            <button style="background-color: #ffffff; color: white; width: 35px; height: 35px; border-radius: 16px;" class="close-modal" aria-label="close modal" data-close>
+              <img src="https://cdn-icons-png.flaticon.com/512/25/25275.png" style="width: 35px; height: 35px; margin-top: 1px;" alt="">
+            </button>
+          </header>
+          
+          <label style="padding-bottom: 1%; padding-left: 1%;" for="nombre" class="formulario__label">👤Nombre</label>
+          <input
+            id="nombre"
+            type="text"
+            class="formulario__input"
+            placeholder="Nombre del cliente"
+          />
+
+
+
+
+
+          <label style="padding-bottom: 1%; padding-left: 1%; " for="tel" class="formulario__label"
+          >☎️Teléfono:</label
+        >
+        <input
+          id="tel"
+          type="text"
+          class="formulario__input"
+          placeholder="Teléfono del cliente"
+        />
+
+        <label style="padding-bottom: 1%; padding-left: 1%;" for="direccion" class="formulario__label"
+        >📌Dirección:</label
+      >
+      <input
+        id="direccion"
+        type="search"
+        class="formulario__input"
+        placeholder="Dirección del cliente"
+        autocomplete="street-address"
+      />
+
+      <label style="padding-bottom: 1%; padding-left: 1%;" class="formulario__label" for="delivery" class="formulario__label"
+        >🚚Delivery:</label
+      >
+
+      <select style="font-size: 23px; font-family: impact; padding-top: 12px; padding-bottom: 12px; color: black;" class="formulario__input" name="" id="delivery">
+        <option value="$1.500">$1.500</option>
+        <option value="$2.000">$2.000</option>
+        <option value="$2.500">$2.500</option>
+        <option value="$1.000">$1.000</option>
+      </select>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        <label style="padding-bottom: 1%; text-align:center;" for="fecha" class="formulario__label"
+        >FORMA DE PAGO:</label
+      >
+
+       
+      <input style=" font-family: arial; font-size: 15px; background-color: #00aa1a;
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      border: 10px #000000;
+      border-radius: 8px;
+      font-size: 20px;" class="open-modal focuxx " id="efectivo" type="button" value="Efectivo"  data-open="modalefectivo" >
+      
+      <br>
+      <br>
+      
+      <input style="font-family: Arial; font-size: 15px; background-color: #00aa1a;
+      color: white;
+      cursor: pointer;
+      width: 100%;
+      border: 15px #000000;
+      border-radius: 8px;
+      font-size: 20px;" 
+
+      class="open-modal " id="transferencia" type="button" value="Transferencia" data-open="modaltransferencia" >
+    </div>
+    <div class="modal" id="modaltransferencia">
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <input type="text" name="" id="Rtransferencia" hidden>
+          <h2>Total a Pagar</h2>
+        </header>
+        <label for="Ttransferencia"></label>
+        <input class="formulario__input" type="text" id="Ttransferencia" placeholder="
+        💲">
+        <footer>
+          <button onclick="transferenciavolver()" class="boton-modal palmaspizza-button" type="button" data-close="">
+            Volver Atrás
+          </button>
+  <!--Boton-->
+  <div class="boton-modal">
+    <label for="btn-modal">
+        Listo
+    </label>
+    <!--Boton-->
+        </footer>
+      </div>
+    
+    </div>
+    <!--Ventana Modal-->
+<input type="checkbox" id="btn-modal">
+<div class="container-modal">
+    <div class="content-modal">
+        <h2>Finalizar Pedido</h2> 
+          <label class="formulario__label" for="tiempo">Tiempo Estimado</label>
+        <select class="formulario__input" name="tiempo" id="tiempo">
+          <option value="*30* Minutos _Aprox_.">30 Minutos</option>
+          <option value="*35* Minutos _Aprox_.">35 Minutos</option>
+          <option value="*40* Minutos _Aprox_.">40 Minutos</option>
+          <option value="*45* Minutos _Aprox_.">45 Minutos</option>
+        </select>
+ <footer>
+  <label for="shipday">Link de seguimiento (Opcional)</label>
+        <button id="seguimiento" type="button" value="Realiza un seguimiento de tu pedido y del reparto en este link: " class="open-modal" data-open="modalshipday">
+          <span style="color: #ffffff;" ;>Ship</span><span style="color: #32C896;" ;>Day</span>
+        </button>
+        <div class="palmaspizza-button" class="btn-cerrar">
+          <label for="btn-modal">Volver Atrás</label>
+      </div>
+      <br>
+        <input type="button" id="submit" value="WhatsApp" class="formulario__submit">
+ </footer>
+        <div class="modal" id="modalshipday">
+          <div class="modal-dialog">
+            <header>
+              <label for="Rshipdayx"></label>
+              <input id="Rshipdayx" type="text" hidden>
+            </header>
+            <label class="formulario__label" for="shipday"></label>
+            <input class="formulario__input" id="shipday" placeholder="Inserte Link de seguimiento" type="text">
+    <footer>
+      <button type="button" class="palmaspizza-button" data-close="">
+        Listo
+      </button>
+
+        </footer>
+    </div>
+        
+
+
+        </div>
+    </div>
+</div>
+<!--Fin de Ventana Modal-->
+    
+    <div class="modal" id="modalefectivo" >
+      <div class="modal-dialog">
+        <header class="modal-header">
+          <label class="formulario__label" for="Refectivo"></label>
+          <input id="Refectivo" type="text" hidden>
+          <h2>¿Con cuanto cancela?</h2>
+        </header>
+        <label for="pagacon"></label>
+        <input id="pagacon" class="formulario__input" type="text" placeholder="💲" hidden>
+        <div style="visibility:hidden !important;" id="respuesta"></div>
+<footer>
+  <button onclick="efectivovolver()" class="boton-modal palmaspizza-button" type="button" data-close="">
+    Volver Atrás
+  </button>
+  <!--Boton-->
+  <div class="boton-modal">
+    <label for="btn-modal">
+        Listo
+    </label>
+    <!--Boton-->
+</footer>
+</div>
+
+
+
+    </form>
+    <script src="js/form.js"></script>
+  </body>
+</html>

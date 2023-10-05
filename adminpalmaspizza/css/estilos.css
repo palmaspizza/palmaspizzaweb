@@ -1,0 +1,572 @@
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  max-width: 1590px;
+  width: 1590px;
+  background-attachment: fixed;
+}
+.formulario {
+  width: 1590px;
+  height: 100%;
+  position: relative;
+  background: rgba(255, 255, 255, 0.97);
+}
+
+.imgLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  position: relative;
+
+  /*border: 1px solid rgba(109, 86, 10, 0.7);*/
+}
+
+.formulario__titulo,
+.formulario__subtitulo,
+.formulario__parrafo {
+  text-align: center;
+  margin-top: 0;
+}
+.formulario__titulo,
+.formulario__subtitulo {
+  color: rgba(0, 0, 0, 0.7);
+}
+.formulario__parrafo {
+  color: rgba(0, 0, 0, 0.5);
+}
+.formulario__input,
+.formulario__label {
+  display: block;
+  width: 100%;
+  font-size: 23px;
+
+}
+.formulario__input {
+  padding: 5px;
+  background: transparent;
+  /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+  border: 3px solid #ff8900;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.formulario__input:focus {
+  /*outline: 1px solid rgba(0,0,0,0.7);*/
+  outline: none;
+  border-color: #009dff;
+}
+/*.formulario__input:focus + .formulario__label{
+    margin-top: -120px;
+}*/
+.formulario__label {
+  font-family: Impact;
+  padding-left: 2%;
+  padding-bottom: 1px;
+  /*position: absolute;*/
+  /*margin-top: -78px;*/
+  /*z-index: -20;*/
+  color: rgb(0, 0, 0);
+  /*transition: all 0.2s;*/
+  margin: 2px;
+  font-size: 23px;
+}
+
+/*Centrar los campos del formulario (Los input y el boton de Enviar al WhatsApp, que tambien es un input)*/
+
+.formulario__input,
+.formulario__submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.fijar {
+    margin-top: -120px;
+} */
+
+/* respuesta del formulario */
+#respuesta {
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+#respuesta.fail {
+  color: red;
+}
+#respuesta.send {
+  color: green;
+}
+
+:root {
+  --lightgray: #ff8900;
+  --blue: steelblue;
+  --white: #fff;
+  --black: rgba(0, 0, 0, 0.8);
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font: 16px/1.5 sans-serif;
+  width: 1590px;
+}
+
+.btn-group {
+  text-align: center;
+}
+
+.open-modal {
+  font-weight: bold;
+  color: white;
+  padding: 0.75rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#seguimiento {
+  background: linear-gradient(to right, #32C896, #32C896, #32C896, #32C896, #32C896, #32C896, #32C896, #32C896, #4d4d4d, #4d4d4d, #4d4d4d, #4d4d4d, #4d4d4d, #4d4d4d, #4d4d4d, #4d4d4d);
+}
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  margin-top: 140px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 9;
+  width: 444px;
+  height: auto;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 9;
+}
+
+.modal-dialog {
+  position: relative;
+  width: 700px;
+  height: 100%;
+  border-radius: 5px;
+  background: #fff;
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 20px;
+  margin: auto;
+  border-right: solid black;  
+  border-right-width: 1px;
+  border-right: solid black;  
+  border-right-width: 1px; 
+  border-right: 100%;
+  border-bottom: solid black;
+  border-bottom: 2px;
+  border: solid rgb(255, 128, 0) 2px;
+}
+
+.modal-header,
+.modal-footer {
+  background: var(--lightgray);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-header .close-modal {
+  font-size: 25px;
+}
+
+.modal p + p {
+
+}
+
+
+
+
+
+
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.page-footer span {
+  color: #e31b23;
+}
+
+/*:::Boton-Modal:::*/
+.boton-modal{
+  padding: 40px;
+  background-color: #fff;
+}
+.boton-modal label{
+  padding: 20px;
+  background-color: #00aa1a;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.boton-modal label:hover{
+  background-color: #00aa1a;
+}
+/*:::Fin Boton-Modal:::*/
+
+/*:::Ventana Modal:::*/
+#btn-modal{
+  display: none;
+}
+.container-modal{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: rgba(144, 148, 150, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+  display: flex;
+}
+
+#efectivolisto{
+  padding: 6px 9px;
+  width: 80%;
+  background-color: #5488a3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.content-modal{
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: 15px;
+}
+.content-modal h2{
+  margin-bottom: 15px;
+  font-size: 30px;
+
+}
+.content-modal p{
+  padding: 15px 15px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+.content-modal .btn-cerrar{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: center;
+}
+.content-modal .btn-cerrar label{
+  padding: 6px 9px;
+  width: 80%;
+  background-color: #5488a3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.content-modal .btn-cerrar label:hover{
+  background-color:#185E83;
+
+}
+.cerrar-modal{
+  width:100%;
+  height: 100vh;
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+}
+@media screen and (max-width:800px) {
+  .content-modal{
+      width: 90%;
+  }
+}
+/*:::Fin Ventana Modal:::*/
+
+
+
+
+
+.modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.5);
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+#btn-modal:checked ~ .modal{
+	opacity: 1;
+	visibility: visible;
+} 
+.contenedor{
+	width: 400px;
+	height: 300px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 1px 7px 23px rgb(0, 0, 0);
+	transition: all 500ms ease;
+	position: relative;
+	transform: translateY(-30%);
+}
+#btn-modal:checked ~ .modal .contenedor{
+	transform: translateY(0%);
+} 
+.contenedor header{
+	padding: 10px;
+	background: #db8046;
+	color: #fff;
+}
+.contenedor label{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+}
+.contenido{
+	width: 100%;
+	padding: 10px; 
+}
+.contenido h3{
+	margin-bottom: 10px;
+}
+.contenido p{
+	margin-bottom: 7px;
+}
+#btn-modal{
+	display: none;
+}
+.lbl-modal{
+	background: #fff;
+	padding: 10px 15px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.contenedor{
+		width: 95%;
+	}
+}
+
+.palmaspizza-button, .formulario__submit {
+  background-color: #ff8900;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: #ff8900 5px;
+    border-radius: 8px;
+    display: block;
+    width: 30%;
+    font-size: 23px;
+  }
+
+#rtr
+
+  #transferencia:focus {
+    outline: 15px solid rgba(0,0,0,0.7);
+    outline: none;
+    border-color: #1100ff;
+    color: black;
+  }
+
+#submit {
+  background: linear-gradient(#25D366, #128C7E, #075E54, #128C7E, #25D366 );
+  font-size: 26px;
+  font-family: impact;
+  color: white;
+  padding: 17px;
+  padding-left: 17px;
+  cursor: pointer;
+  border: #ffc400 13px;
+  border-radius: 4px;
+  display: block;
+  width: 45%;
+  font-size: 23px;
+}
+
+.agregar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: #05a100;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: #ff8900 5px;
+  border-radius: 8px;
+  display: block;
+  font-size: 23px;
+  width: 100%;
+}
+
+.cancelarr {
+  background-color: #cc2c41;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: #be6500 5px;
+  border-radius: 8px;
+  display: block;
+  font-size: 23px;
+  width: 100%;
+}
+
+h1 {
+  background: #ff8900;
+  border-radius: 10px;
+  width: 350px;
+  height: 100%;
+}
+
+#palmaspizzatitle{
+  position:relative;
+  margin-top: 2px;
+  
+}
+
+h2 {
+  position: static;
+  width: auto;
+  margin: auto;
+  font-size: 23px;
+  font-size: 30px !important;
+}
+
+label {
+  font-family: impact;
+  font-size: 23px;
+}
+
+.labelauto {
+  margin:auto
+}
+
+input {
+  cursor: pointer;
+}
+
+.agregarpizza {
+  border-radius: 5px;
+  border-color: #ff0000;
+  border: #0d00ff 20%;
+  background-color: #ff9800;
+  font-size: 23px;
+}
+
+#content-superbeef {
+  margin-top: 60px;
+  margin-left: 15px;
+}
+
+#content-napolitana {
+  position: relative; 
+  top: -295px; 
+  left: 550px;
+}
+
+#content-italiana {
+  position:relative; 
+  left: 1085px; 
+  top: -592px;
+}
+
+#content-superpepperoni {
+  margin-left: 15px;
+  margin-top: -550px;
+}
+
+#content-vegetariana {
+  position: relative; 
+  top: -295px; 
+  left: 550px;
+}
+
+#content-hawaiana {
+  position:relative; 
+  left: 1085px; 
+  top: -592px;
+}
+
+
+#content-cheeseburger {
+  margin-left: 15px;
+  margin-top: -550px;
+}
+
+#content-chillian {
+  position: relative; 
+  top: -295px; 
+  left: 550px;
+}
+
+#content-pollobbq {
+  position:relative; 
+  left: 1085px; 
+  top: -592px;
+}
+
+
+.button-finalizarpedido {
+  color: #ff8900;
+  position: relative;
+  z-index: 7;
+}
